@@ -48,8 +48,7 @@ header nav ul li{
   position: relative;
 }
 header nav ul li a{
-  /* color: var(--white-color); */
-  color: #efe8bb;
+  color: var(--white-color);
   text-decoration: none;
   margin: 17px;
 }
@@ -83,7 +82,6 @@ header nav ul li a:hover:after{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: var(--white-color);
-  background-color: #efe8bb;
   border-radius: 5px;
 }
 .bar1{
@@ -98,7 +96,7 @@ header nav ul li a:hover:after{
   margin: 0;
 }
 .container{
-  background-image: url('../images/image-3.jpeg');
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,19 +106,19 @@ header nav ul li a:hover:after{
 }
 @keyframes animate{
   0%, 100%{
-    background-image: url('../images/image-1.jpeg');
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-1.jpeg');
   }
   25%{
-    background-image: url('../images/image-2.jpg');
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-2.jpg');
   }
   50%{
-    background-image: url('../images/image-3.jpeg');
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
   }
   75%{
-    background-image: url('../images/image-5.jpeg');
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-5.jpeg');
   }
 }
-main{
+main, .about-hero{
   text-align: center;
   width: 100%;
   position: absolute;
@@ -131,7 +129,10 @@ main{
 }
 main h1{
   font-size: 5rem;
-  color: #efe8bb;
+  letter-spacing: 0.3rem;
+}
+main h1 span{
+  color: var(--pink-color);
 }
 main p{
   max-width: 600px;
@@ -139,7 +140,7 @@ main p{
   font-size: 1.5rem;
   margin: auto;
   margin-top: 20px;
-  color: #efe8bb;
+  letter-spacing: 0.2rem;
 }
 main button{
   padding: 10px;
@@ -147,12 +148,40 @@ main button{
   border: none;
   margin-top: 30px;
   margin-right: 20px;
-  /* color: var(--white-color); */
-  color: #efe8bb;
+  color: var(--white-color);
   background-color: transparent;
   border: 2px solid var(--pink-color);
   cursor: pointer;
   font-family: 'Bricolage Grotesque', sans-serif;
+}
+.wrapper{
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+.about-hero{
+  color: var(--pink-color);
+}
+.about-hero h2{
+  font-size: 7rem;
+}
+.about-hero hr{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  border: none;
+  height: 2px;
+  background-color: var(--pink-color);
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.about-hero p{
+  font-size: 2rem;
+  color: var(--pink-color);
 }
 .btn{
   position: relative;
@@ -179,6 +208,39 @@ main button{
   z-index: 1;
   overflow: hidden;
   background-color:  transparent;
+  letter-spacing: 1px;
+}
+.sec-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  padding: 80px;
+}
+.sec-1 .info{
+  max-width: 500px;
+  width: 100%;
+}
+.sec-1 h3{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.sec-1 h2{
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: var(--pink-color);
+  margin-bottom: 20px;
+}
+.sec-1 p{
+  line-height: 1.3;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.sec-1 img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 @media (max-width: 990px){
   header{
@@ -256,7 +318,6 @@ main button{
     font-size: 4.5rem;
   }
   main p{
-    /* font-size: 1.5rem; */
     width: 98%;
   }
 }
