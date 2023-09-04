@@ -99,6 +99,7 @@ header nav ul li a:hover:after{
 }
 .container{
   background-image: url('images/image-3.jpeg');
+  background-color: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
