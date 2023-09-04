@@ -98,8 +98,7 @@ header nav ul li a:hover:after{
   margin: 0;
 }
 .container{
-  background-image: url('images/image-3.jpeg');
-  background-color: black;
+  background-image: url('../images/image-3.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,16 +108,16 @@ header nav ul li a:hover:after{
 }
 @keyframes animate{
   0%, 100%{
-    background-image: url('images/image-1.jpeg');
+    background-image: url('../images/image-1.jpeg');
   }
   25%{
-    background-image: url('images/image-2.jpg');
+    background-image: url('../images/image-2.jpg');
   }
   50%{
-    background-image: url('images/image-3.jpeg');
+    background-image: url('../images/image-3.jpeg');
   }
   75%{
-    background-image: url('images/image-5.jpeg');
+    background-image: url('../images/image-5.jpeg');
   }
 }
 main{
