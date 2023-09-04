@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
+
+:root{
+  --pink-color: #ff481d;
+  --light-black: #0000001c;
+  --black-color: #000000;
+  --white-color: #ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+header{
+  padding: 15px 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 220ms ease-in;
+  z-index: 999;
+}
+header.scrolled{
+  background-color: var(--black-color);
+  padding: 5px 10px;
+}
+header img{
+  width: 230px;
+}
+header nav ul{
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  list-style: none;
+  position: relative;
+}
+header nav ul li{
+  display: inline;
+  position: relative;
+}
+header nav ul li a{
+  /* color: var(--white-color); */
+  color: #efe8bb;
+  text-decoration: none;
+  margin: 17px;
+}
+header nav ul li a:hover{
+  color:var(--pink-color);
+}
+header nav ul li .active{
+  color:var(--pink-color);
+}
+header nav ul li a:after{
+  content: "";
+  position: absolute;
+  background-color: var(--pink-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+header nav ul li a:hover:after{
+  width: 100%;
+}
+.menu-bar{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  height: 2px;
+  margin: 6px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* background: var(--white-color); */
+  background-color: #efe8bb;
+  border-radius: 5px;
+}
+.bar1{
+  width: 16px;
+}
+.bar2{
+  width: 25px;
+}
+.bar3{
+  width: 16px;
+  float: right;
+  margin: 0;
+}
+.container{
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('images/image-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+main{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pink-color);
+}
+main h2{
+  font-size: 7rem;
+}
+main hr{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  border: none;
+  height: 2px;
+  background-color: var(--pink-color);
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+main p{
+  font-size: 2rem;
+}
+.btn{
+  position: relative;
+  border-radius: 5px;
+}
+.btn1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--pink-color);
+  transform: scale(0);
+  transition: transform 300ms ease-in-out;
+  color: var(--black-color);
+}
+.btn1:hover::before, 
+.btn1:focus::before{
+  transform: scale(1.5);
+}
+.btn1{
+  z-index: 1;
+  overflow: hidden;
+  background-color:  transparent;
+}
+@media (max-width: 990px){
+  header{
+    padding: 5px 10px;
+  }
+  header.active{
+    background-color: var(--black-color);
+  }
+  header img{
+    width: 200px;
+  }
+  nav{
+    position: relative;
+  }
+  nav ul li a.active{
+    color: var(--white-color);
+  }
+  .menu-bar.active .bar:nth-child(2){
+    opacity: 0;
+}
+  .menu-bar.active .bar:nth-child(1){
+    width: 25px;
+    transform: translateY(8px) rotate(45deg);
+}
+  .menu-bar.active .bar:nth-child(3){
+    width: 25px;
+    transform: translateY(-8px) rotate(-45deg);
+}
+  header nav ul{
+    background-color: var(--black-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -400px;
+    right: 0%;
+    width: 100vw;
+    padding-left: 20px;
+    padding-top: 30px;
+    z-index: 1;
+    margin: 0;
+    transition: top 0.4s ease-in-out;
+  }
+  header nav ul.active{
+    top: 60px;
+  }
+  header nav ul li{
+    margin: 17px 0;
+    display: inline;
+  }
+  header nav ul li a:after{
+    display: none;
+  }
+  header nav ul li a{
+    transition: color 0.4s ease-in-out;
+  }
+  header nav ul li a:hover{
+    color: var(--pink-color);
+  }
+  header nav ul li .active{
+    color:var(--pink-color);
+  }
+  .menu-bar{
+    display: block;
+  }
+}
+@media (max-width: 500px){
+  header{
+    padding: 15px 5px;
+  }
+  header img{
+    width: 150px;
+  }
+  main h1{
+    font-size: 3.5rem;
+  }
+  main p{
+    font-size: 1.2rem;
+    width: 98%;
+  }
+}
