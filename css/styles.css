@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
 
 :root{
-  --pink-color: #ff481d;
-  --light-black: #0000001c;
+  --orange-color: #ff481d;
+  --light-black: #000000c2;
   --black-color: #000000;
   --white-color: #ffffff;
 }
@@ -32,7 +32,7 @@ header{
 }
 header.scrolled{
   background-color: var(--black-color);
-  padding: 5px 10px;
+  padding: 5px 80px;
 }
 header img{
   width: 230px;
@@ -53,15 +53,15 @@ header nav ul li a{
   margin: 17px;
 }
 header nav ul li a:hover{
-  color:var(--pink-color);
+  color:var(--orange-color);
 }
 header nav ul li .active{
-  color:var(--pink-color);
+  color:var(--orange-color);
 }
 header nav ul li a:after{
   content: "";
   position: absolute;
-  background-color: var(--pink-color);
+  background-color: var(--orange-color);
   height: 3px;
   width: 0;
   left: 0;
@@ -96,7 +96,7 @@ header nav ul li a:hover:after{
   margin: 0;
 }
 .container{
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
+  background-image: linear-gradient(45deg, #0000008f, rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ main h1{
   letter-spacing: 0.3rem;
 }
 main h1 span{
-  color: var(--pink-color);
+  color: var(--orange-color);
 }
 main p{
   max-width: 600px;
@@ -150,7 +150,7 @@ main button{
   margin-right: 20px;
   color: var(--white-color);
   background-color: transparent;
-  border: 2px solid var(--pink-color);
+  border: 2px solid var(--orange-color);
   cursor: pointer;
   font-family: 'Bricolage Grotesque', sans-serif;
 }
@@ -164,7 +164,7 @@ main button{
   position: relative;
 }
 .about-hero{
-  color: var(--pink-color);
+  color: var(--orange-color);
 }
 .about-hero h2{
   font-size: 7rem;
@@ -175,13 +175,13 @@ main button{
   margin: 0 auto;
   border: none;
   height: 2px;
-  background-color: var(--pink-color);
+  background-color: var(--orange-color);
   margin-bottom: 30px;
   font-weight: 100;
 }
 .about-hero p{
   font-size: 2rem;
-  color: var(--pink-color);
+  color: var(--orange-color);
 }
 .btn{
   position: relative;
@@ -195,7 +195,7 @@ main button{
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: var(--pink-color);
+  background-color: var(--orange-color);
   transform: scale(0);
   transition: transform 300ms ease-in-out;
   color: var(--black-color);
@@ -222,6 +222,10 @@ main button{
   max-width: 500px;
   width: 100%;
 }
+.sec-1 .info p span{
+  color: var(--orange-color);
+  font-weight: bold;
+}
 .sec-1 h3{
   font-size: 2.3rem;
   margin-bottom: 20px;
@@ -229,7 +233,7 @@ main button{
 .sec-1 h2{
   font-size: 4rem;
   letter-spacing: 0.3rem;
-  color: var(--pink-color);
+  color: var(--orange-color);
   margin-bottom: 20px;
 }
 .sec-1 p{
@@ -242,6 +246,74 @@ main button{
   height: 500px;
   object-fit: cover;
 }
+.bf-footer{
+  background: linear-gradient(var(--light-black), var(--light-black)), url('../images/image-5.jpeg');
+  color: var(--white-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 80px 0px;
+}
+.bf-footer h2{
+  font-size: 3rem;
+  color: var(--orange-color);
+  letter-spacing: 0.2rem;
+}
+.bf-footer .mission p{
+  width: 350px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+}
+.bf-footer ul li{
+  list-style: none;
+}
+.bf-footer ul li a{
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+.bf-footer ul li a:hover{
+  color: var(--orange-color);
+}
+.bf-footer h3{
+  font-size: 2.5rem;
+  color: var(--orange-color);
+  letter-spacing: 0.2rem;
+}
+.bf-footer hr{
+  height: 2px;
+  display: block;
+  background-color: var(--orange-color);
+  border: none;
+  width: 60px;
+  margin-bottom: 30px;
+}
+.bf-footer .contact p{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.bf-footer .contact p i{
+  margin-right: 10px;
+}
+footer{
+  background-color: #131212;
+  padding: 30px;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.6rem;
+}
+footer p span{
+  color: var(--orange-color);
+}
 @media (max-width: 990px){
   header{
     padding: 5px 10px;
@@ -249,9 +321,9 @@ main button{
   header.active{
     background-color: var(--black-color);
   }
-  header img{
+  /* header img{
     width: 200px;
-  }
+  } */
   nav{
     position: relative;
   }
@@ -298,10 +370,10 @@ main button{
     transition: color 0.4s ease-in-out;
   }
   header nav ul li a:hover{
-    color: var(--pink-color);
+    color: var(--orange-color);
   }
   header nav ul li .active{
-    color:var(--pink-color);
+    color:var(--orange-color);
   }
   .menu-bar{
     display: block;
@@ -312,7 +384,7 @@ main button{
     padding: 15px 5px;
   }
   header img{
-    width: 150px;
+    width: 180px;
   }
   main h1{
     font-size: 4.5rem;
