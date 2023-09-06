@@ -474,36 +474,73 @@ main button{
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 50px;
+  gap: 30px 50px;
   flex-wrap: wrap;
 }
 .contact-us .info-sec{
-  max-width: 400px;
+  max-width: 550px;
   width: 100%; 
+  padding: 0 15px;
 }
 .contact-us .info-sec h3{
   color: var(--light-green-color);
 }
 .contact-us .form-sec{
   border: 2px solid var(--dark-blue-color);
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
+  padding: 30px 15px;
+  border-radius: 5px;
 }
 .contact-us form input{
   width: 100%;
+  padding: 15px 12px;
+  font-size: 1.5rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  outline: none;
+  border: 1px solid var(--dark-blue-color);
+  border-radius: 5px;
 }
 .contact-us form .input-flex{
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+.contact-us form .input-flex div{
   width: 100%;
 }
 .contact-us form .input-flex input{
   width: 100%;
 }
+.contact-us form input[type="text"]:focus, input[type="email"]:focus{
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px 1px var(--dark-blue-color);
+}
 .contact-us form textarea{
   width: 100%;
-  resize: vertical;
+  resize: none;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5rem;
+  outline: none;
+  border: 1px solid var(--dark-blue-color);
+  border-radius: 5px;
+}
+.contact-us form textarea:focus{
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px 1px var(--dark-blue-color);
+}
+.contact-us form input[type="submit"]{
+  border: none; 
+  background-color: var(--dark-blue-color); 
+  color: var(--white-color); 
+  cursor: pointer;
 }
 footer{
   background-color: var(--dark-blue-color);
@@ -589,6 +626,9 @@ footer p span{
   }
 }
 @media (max-width: 730px){
+  header img{
+    width: 200px;
+  }
   .bf-footer{
     display: block;
     padding-left: 15px;
@@ -614,7 +654,10 @@ footer p span{
     background-color: var(--dark-blue-color);
   }
   header img{
-    width: 180px;
+    width: 160px;
+  }
+  header nav ul.active{
+    top: 56px;
   }
   main h1{
     font-size: 4.5rem;
@@ -622,8 +665,28 @@ footer p span{
   main p{
     width: 98%;
   }
+  .contact-us .form-sec{
+    border:none;
+    padding: 40px 10px;
+  }
+  .contact-us form .input-flex{
+    display: block;
+    margin-bottom: 0;
+  }
+  .contact-us form .input-flex input:first-of-type{
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 360px){
+  header{
+    padding: 5px 5px;
+  }
+  header img{
+    width: 140px;
+  }
+  header nav ul.active{
+    top: 50px;
+  }
   main h1{
     font-size: 3.2rem;
   }

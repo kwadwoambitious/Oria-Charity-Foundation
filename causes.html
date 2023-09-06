@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our foundation is a non-governmental organization(NGO) established to address specific social, humanitarian, or environmental issues by raising funds, providing resources, and conducting initiatives to support those in need."/>
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Oria Charity Foundation | Causes</title>
 </head>
 <body>
@@ -32,29 +34,29 @@
           </nav>
         </div>
       </header>
-      <main class="causes-hero">
+      <main class="causes-hero main-title">
         <h2>Our Causes</h2>
         <hr>
         <p><a href="./" style="text-decoration: none; color: white;">Home  /</a> Causes</p>
       </main>
     </div>
     <section class="causes">
-      <h2>Our Major Causes</h2>
-      <hr>
+      <h2 class="causes-title">Our Major Causes</h2>
+      <hr class="causes-title">
       <div class="causes-container">
-        <div>
+        <div class="cause">
             <img src="images/causes-1.jpeg" alt="orphanage girl in a classroom">
             <h3>Education for every child</h3>
             <p>Our foundation focuses on improving access to and the quality of education for individuals and communities facing educational challenges.</p>
             <a href="">Donate</a>
         </div>
-        <div>
+        <div class="cause">
           <img src="images/causes-2.jpeg" alt="orphanage girl eating">
           <h3>Feeding the hungry people</h3>
           <p>Our foundation focuses on addressing issues related to food insecurity and malnutrition, and ensures that individuals and communities have access to sufficient, nutritious food.</p>
           <a href="">Donate</a>
         </div>
-        <div>
+        <div class="cause">
           <img src="images/causes-3.jpeg" alt="orphanage girl being vaccinated">
           <h3>Good health for the needy</h3>
           <p>Our foundation focuses on enhancing the well-being and quality of life of individuals and communities by ensuring they have access to timely and appropriate healthcare services.</p>
@@ -63,12 +65,12 @@
       </div>
     </section>
     <section class="bf-footer">
-      <div class="mission">
+      <div class="mission mission-animate">
         <h2>Who Are We?</h2>
         <hr>
         <p>Our foundation is a non-governmental organization(NGO) established to address specific social, humanitarian, or environmental issues by raising funds, providing resources, and conducting initiatives to support those in need.</p>
       </div>
-      <div class="links">
+      <div class="links links-animate">
         <h3>Quick Links</h3>
         <hr>
         <ul>
@@ -79,7 +81,7 @@
           <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become A Volunteer</a></li>
         </ul>
       </div>
-      <div class="contact">
+      <div class="contact contact-animate">
         <h3>Contact Us</h3>
         <hr>
         <p><i class="fa-solid fa-location-dot" style="color: #09cc7f;"></i>Kumasi, Ghana</p>
@@ -97,5 +99,19 @@
       <p>Copyright &copy; 2023. All rights reserved,<span><br>Oria Charity Foundation.</span></p>
     </footer>
       <script src="script.js"></script>
+      <script>
+        ScrollReveal({
+          reset: true,
+          distance: '60px',
+          duration: 2500,
+          delay: 400
+        });
+  
+  
+        ScrollReveal().reveal('.main-title, .causes-title', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.cause', { delay: 50, origin: 'bottom', interval: 200 }); 
+        ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate', { delay: 50, origin: 'bottom', interval: 200 });
+      </script>
+
 </body>
 </html>
