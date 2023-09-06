@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap');
 
 :root{
-  --orange-color: #ff481d;
+  --light-green-color: #09cc7f;
   --light-black: #000000c2;
-  --black-color: #000000;
+  --dark-blue-color: #002d5b;
   --white-color: #ffffff;
+  --gray-color: #7b7d7b;
+  --bg-gradient-color: #0000008f;
 }
 *{
   margin: 0;
@@ -32,14 +34,13 @@ header{
   z-index: 999;
 }
 header.scrolled{
-  background-color: var(--black-color);
+  background-color: var(--dark-blue-color);
   padding: 5px 80px;
 }
 header img{
   width: 230px;
 }
 header nav ul{
-  font-size: 18px;
   letter-spacing: 0.3px;
   list-style: none;
   position: relative;
@@ -51,18 +52,20 @@ header nav ul li{
 header nav ul li a{
   color: var(--white-color);
   text-decoration: none;
-  margin: 17px;
+  font-size: 1.6rem;
+  margin: 14px;
+  letter-spacing: 0.1rem;
 }
 header nav ul li a:hover{
-  color:var(--orange-color);
+  color:var(--light-green-color);
 }
 header nav ul li .active{
-  color:var(--orange-color);
+  color:var(--light-green-color);
 }
 header nav ul li a:after{
   content: "";
   position: absolute;
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   height: 3px;
   width: 0;
   left: 0;
@@ -97,7 +100,7 @@ header nav ul li a:hover:after{
   margin: 0;
 }
 .container{
-  background-image: linear-gradient(45deg, #0000008f, rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
+  background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-3.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,16 +110,16 @@ header nav ul li a:hover:after{
 }
 @keyframes animate{
   0%, 100%{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-1.jpeg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-1.jpeg');
   }
   25%{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-2.jpg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-2.jpg');
   }
   50%{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-3.jpeg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-3.jpeg');
   }
   75%{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-5.jpeg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-5.jpeg');
   }
 }
 main, .about-hero{
@@ -133,7 +136,7 @@ main h1{
   letter-spacing: 0.3rem;
 }
 main h1 span{
-  color: var(--orange-color);
+  color: var(--light-green-color);
 }
 main p{
   max-width: 600px;
@@ -151,12 +154,12 @@ main button{
   margin-right: 20px;
   color: var(--white-color);
   background-color: transparent;
-  border: 2px solid var(--orange-color);
+  border: 2px solid var(--light-green-color);
   cursor: pointer;
   font-family: 'Bricolage Grotesque', sans-serif;
 }
-.wrapper, .wrap{
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/image-2.jpg');
+.wrapper, .wrap, .holder{
+  background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -165,27 +168,30 @@ main button{
   position: relative;
 }
 .wrap{
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.582)), url('../images/causes-bg-1.jpeg');
+  background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/causes-bg-1.jpeg');
 }
-.about-hero, .causes-hero{
-  color: var(--orange-color);
+.holder{
+  background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/causes-bg-2.jpeg');
 }
-.about-hero h2, .causes-hero h2{
+.about-hero, .causes-hero, .contact-hero{
+  color: var(--light-green-color);
+}
+.about-hero h2, .causes-hero h2, .contact-hero h2{
   font-size: 7rem;
 }
-.about-hero hr, .causes-hero hr{
+.about-hero hr, .causes-hero hr, .contact-hero hr{
   display: block;
   width: 150px;
   margin: 0 auto;
   border: none;
   height: 2px;
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   margin-bottom: 30px;
   font-weight: 100;
 }
-.about-hero p, .causes-hero p{
+.about-hero p, .causes-hero p, .contact-hero p{
   font-size: 2rem;
-  color: var(--orange-color);
+  color: var(--light-green-color);
 }
 .btn{
   position: relative;
@@ -199,10 +205,10 @@ main button{
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   transform: scale(0);
   transition: transform 300ms ease-in-out;
-  color: var(--black-color);
+  color: var(--dark-blue-color);
 }
 .btn1:hover::before, 
 .btn1:focus::before{
@@ -227,24 +233,26 @@ main button{
   width: 100%;
 }
 .sec-1 .info p span{
-  color: var(--orange-color);
+  color: var(--light-green-color);
   font-weight: bold;
 }
-.sec-1 h3{
+.sec-1 h3, .contact-us h3{
   font-size: 2.3rem;
   margin-bottom: 20px;
+  color: var(--dark-blue-color);
 }
 .sec-1 h2{
   font-size: 4rem;
   letter-spacing: 0.3rem;
-  color: var(--orange-color);
+  color: var(--light-green-color);
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-.sec-1 p{
+.sec-1 p, .contact-us p{
   line-height: 1.3;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+  color: var(--dark-blue-color);
 }
 .sec-1 img{
   max-width: 500px;
@@ -268,7 +276,7 @@ main button{
 }
 .bf-footer h2{
   font-size: 3rem;
-  color: var(--orange-color);
+  color: var(--light-green-color);
   letter-spacing: 0.2rem;
 }
 .bf-footer .mission p{
@@ -288,20 +296,21 @@ main button{
   margin-bottom: 20px;
   transition: 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  letter-spacing: 0.2rem;
 }
 .bf-footer ul li a:hover{
-  color: var(--orange-color);
+  color: var(--light-green-color);
   transform: translateX(10px);
 }
 .bf-footer h3{
   font-size: 2.5rem;
-  color: var(--orange-color);
+  color: var(--light-green-color);
   letter-spacing: 0.2rem;
 }
 .bf-footer hr{
   height: 2px;
   display: block;
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   border: none;
   width: 60px;
   margin-bottom: 30px;
@@ -309,6 +318,7 @@ main button{
 .bf-footer .contact p{
   font-size: 1.6rem;
   margin-bottom: 20px;
+  letter-spacing: 0.2rem;
 }
 .bf-footer .contact p i{
   margin-right: 10px;
@@ -323,7 +333,7 @@ main button{
   height: 35px;
   font-size: 18px;
   margin-right: 8px;
-  border: 2px solid var(--orange-color);
+  border: 2px solid var(--light-green-color);
   transition: transform 0.3s ease-in-out;
 }
 .bf-footer .contact div i:hover{
@@ -335,12 +345,13 @@ main button{
 .causes h2, .volunteer h2{
   text-align: center;
   font-size: 4rem;
-  color: var(--orange-color);
+  color: var(--light-green-color);
+  letter-spacing: 0.2rem;
 }
 .causes hr, .volunteer hr{
   height: 2px;
   display: block;
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   border: none;
   width: 100px;
   margin: 0 auto;
@@ -354,68 +365,68 @@ main button{
   flex-wrap: wrap;
 }
 .causes-container img{
-  width: 290px;
+  width: 300px;
   height: 200px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
 .causes-container div{
-  width: 290px;
+  width: 300px;
   border-radius: 10px;
   padding-bottom: 20px;
-  box-shadow: 1px 2px 5px 1px var(--black-color);
+  box-shadow: 1px 2px 60px 1px var(--dark-blue-color);
   transition: transform 0.3s ease-in-out;
 }
 .causes-container div:hover{
   transform: scale(1.04);
 }
 .causes-container h3{
-  font-size: 2.1rem;
+  font-size: 2rem;
   padding: 10px;
   text-align: left;
+  letter-spacing: 0.1rem;
+  color: var(--dark-blue-color);
 }
 .causes-container p{
   font-size: 1.5rem;
   text-align: left;
   padding: 0 10px 10px 10px;
-  color: #7b7d7b;
+  color: var(--gray-color);
   line-height: 1.5;
 }
 .causes-container a{
   display: block;
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--dark-blue-color);
   width: 270px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 15px 40px;
   font-size: 2rem;
   text-align: center;
-  border: 2px solid var(--orange-color);
+  border: 1px solid var(--light-green-color);
   border-radius: 5px;
-  transition: background 0.5s ease-in-out;
-  transition: color 0.1s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.1s ease-in-out;
 }
 .causes-container a:hover{
-  background-color: var(--orange-color);
+  background-color: var(--light-green-color);
   color: var(--white-color);
 }
 .volunteer{
-  background-color: var(--orange-color);
+  background-color: var(--dark-blue-color);
   padding: 80px 0;
 }
 .volunteer h2{
-  color: var(--white-color);
+  color: var(--light-green-color);
 }
 .volunteer hr{
-  background-color: var(--white-color);
+  background-color: var(--light-green-color);
 }
 .volunteer img{
   width: 300px;
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
-  height: 300px;
+  border-radius: 7px;
   object-fit: cover;
 }
 .volunteer h3, .volunteer p{
@@ -425,10 +436,10 @@ main button{
 .volunteer h3{
   font-size: 2.8rem;
   margin-top: 20px;
+  color: var(--light-green-color);
 }
 .volunteer p{
   font-size: 1.8rem;
-  color: #efe8bb;
   margin-top: 10px;
 }
 .volunteer div{
@@ -458,15 +469,52 @@ main button{
 .volunteer div i:hover{
   transform: translateY(8px);
 }
+.contact-us{
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.contact-us .info-sec{
+  max-width: 400px;
+  width: 100%; 
+}
+.contact-us .info-sec h3{
+  color: var(--light-green-color);
+}
+.contact-us .form-sec{
+  border: 2px solid var(--dark-blue-color);
+  max-width: 500px;
+  width: 100%;
+}
+.contact-us form input{
+  width: 100%;
+}
+.contact-us form .input-flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.contact-us form .input-flex input{
+  width: 100%;
+}
+.contact-us form textarea{
+  width: 100%;
+  resize: vertical;
+}
 footer{
-  background-color: #131212;
+  background-color: var(--dark-blue-color);
   padding: 30px 0;
   color: var(--white-color);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 footer p span{
-  color: var(--orange-color);
+  color: var(--light-green-color);
 }
 @media (max-width: 990px){
   header{
@@ -476,11 +524,8 @@ footer p span{
     padding: 5px 10px;
   }
   header.active{
-    background-color: var(--black-color);
+    background-color: var(--dark-blue-color);
   }
-  /* header img{
-    width: 200px;
-  } */
   nav{
     position: relative;
   }
@@ -499,7 +544,7 @@ footer p span{
     transform: translateY(-8px) rotate(-45deg);
 }
   header nav ul{
-    background-color: var(--black-color);
+    background-color: var(--dark-blue-color);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -527,10 +572,10 @@ footer p span{
     transition: color 0.4s ease-in-out;
   }
   header nav ul li a:hover{
-    color: var(--orange-color);
+    color: var(--light-green-color);
   }
   header nav ul li .active{
-    color:var(--orange-color);
+    color:var(--light-green-color);
   }
   .menu-bar{
     display: block;
@@ -546,7 +591,7 @@ footer p span{
 @media (max-width: 730px){
   .bf-footer{
     display: block;
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 10px;
     margin: 0;
   }
@@ -566,8 +611,7 @@ footer p span{
 }
 @media (max-width: 500px){
   header{
-    /* padding: 15px 5px; */
-    background-color: var(--black-color);
+    background-color: var(--dark-blue-color);
   }
   header img{
     width: 180px;
@@ -595,8 +639,17 @@ footer p span{
     margin-right: 20px;
     color: var(--white-color);
     background-color: transparent;
-    border: 2px solid var(--orange-color);
+    border: 2px solid var(--light-green-color);
     cursor: pointer;
     font-family: 'Bricolage Grotesque', sans-serif;
   }
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--light-green-color), var(--dark-blue-color));
+  height: 200px;
+  border-radius: 10px;
 }

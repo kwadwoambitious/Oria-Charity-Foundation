@@ -3,29 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-  <title>Oria Charity Foundation</title>
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Oria Charity Foundation | Contact</title>
 </head>
 <body>
-    <div class="container">
+    <div class="holder">
       <header>
         <div>
-          <a href="./"><img src="images/logo-1.png" alt="Oria Charity Foundation Logo"></a>
+          <a href="./"><img src="images/logo-2.png" alt="Oria Charity Foundation Logo"></a>
         </div>
         <div>
           <nav>
             <ul>
-              <li><a href="./" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="./">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="causes.html">Causes</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li>
-                <a href="pages">Pages</a>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
             </ul>
             <div class="menu-bar">
               <span class="bar bar1"></span>
@@ -35,7 +32,67 @@
           </nav>
         </div>
       </header>
-
+      <main class="contact-hero">
+        <h2>Contact Us</h2>
+        <hr>
+        <p><a href="./" style="text-decoration: none; color: white;">Home  /</a> Contact</p>
+      </main>
+    </div>
+    <section class="contact-us">
+      <div class="info-sec">
+        <h3>Get In touch with us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.</p>
+      </div>
+      <div class="form-sec">
+        <form>
+          <div class="input-flex">
+            <div>
+              <input type="text" name="full name" placeholder="Enter your full name">
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Enter email address">
+            </div>
+          </div>
+          <input type="text" name="subject" placeholder="Enter subject">
+          <textarea name="message" placeholder="Enter message"></textarea>
+          <input type="submit" name="send" value="Send Message">
+        </form>
+      </div>
+    </section>
+    <section class="bf-footer">
+      <div class="mission">
+        <h2 class="mission-info">Who Are We?</h2>
+        <hr class="mission-info">
+        <p class="mission-info">Our foundation is a non-governmental organization(NGO) established to address specific social, humanitarian, or environmental issues by raising funds, providing resources, and conducting initiatives to support those in need.</p>
+      </div>
+      <div class="links">
+        <h3>Quick Links</h3>
+        <hr>
+        <ul>
+          <li><a href="./"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>About Us</a></li>
+          <li><a href="causes.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Causes</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Contact</a></li>
+          <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become A Volunteer</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <hr>
+        <p><i class="fa-solid fa-location-dot" style="color: #09cc7f;"></i>Kumasi, Ghana</p>
+        <p><i class="fa-solid fa-phone" style="color: #09cc7f;"></i>+233 55 423 4233</p>
+        <p><i class="fa-solid fa-envelope" style="color: #09cc7f;"></i>info@example.com</p>
+        <div>
+          <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2023. All rights reserved,<span><br>Oria Charity Foundation.</span></p>
+    </footer>
       <script src="script.js"></script>
 </body>
 </html>
