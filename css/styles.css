@@ -116,10 +116,10 @@ header nav ul li a:hover:after{
     background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-2.jpg');
   }
   50%{
-    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-3.jpeg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-5.jpeg');
   }
   75%{
-    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-5.jpeg');
+    background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-6.jpeg');
   }
 }
 main, .about-hero{
@@ -144,18 +144,19 @@ main p{
   font-size: 1.5rem;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 30px; 
   letter-spacing: 0.2rem;
+  line-height: 1.7;
 }
-main button{
+.index-main a, .causes-container a{
   padding: 10px;
-  font-size: 22px;
+  font-size: 1.8rem;
+  text-decoration: none;
   border: none;
-  margin-top: 30px;
   margin-right: 20px;
   color: var(--white-color);
   background-color: transparent;
-  border: 2px solid var(--light-green-color);
-  cursor: pointer;
+  border: 1px solid var(--light-green-color);
   font-family: 'Bricolage Grotesque', sans-serif;
 }
 .wrapper, .wrap, .holder{
@@ -209,10 +210,11 @@ main button{
   transform: scale(0);
   transition: transform 300ms ease-in-out;
   color: var(--dark-blue-color);
+  border-radius: 5px;
 }
 .btn1:hover::before, 
 .btn1:focus::before{
-  transform: scale(1.5);
+  transform: scale(1.03);
 }
 .btn1{
   z-index: 1;
@@ -249,7 +251,7 @@ main button{
   word-wrap: break-word;
 }
 .sec-1 p, .contact-us p{
-  line-height: 1.3;
+  line-height: 1.7;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   color: var(--dark-blue-color);
@@ -282,7 +284,7 @@ main button{
 .bf-footer .mission p{
   width: 350px;
   font-size: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.7;
   letter-spacing: 0.2rem;
 }
 .bf-footer ul li{
@@ -362,23 +364,28 @@ main button{
   align-items: center;
   justify-content: center;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: wrap
+}
+.causes-container .cause{
+  overflow: hidden;
 }
 .causes-container img{
   width: 300px;
   height: 200px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.causes-container img:hover{
+  transform: scale(1.1);
 }
 .causes-container div{
   width: 300px;
   border-radius: 10px;
   padding-bottom: 20px;
-  box-shadow: 1px 2px 60px 1px var(--dark-blue-color);
-  transition: transform 0.3s ease-in-out;
-}
-.causes-container div:hover{
-  transform: scale(1.04);
+  box-shadow: -1px 1px 12px -6px var(--dark-blue-color);
+  -webkit-box-shadow: -1px 1px 12px -6px var(--dark-blue-color);
+  -moz-box-shadow: -1px 1px 12px -6px var(--dark-blue-color);
 }
 .causes-container h3{
   font-size: 2rem;
@@ -392,25 +399,68 @@ main button{
   text-align: left;
   padding: 0 10px 10px 10px;
   color: var(--gray-color);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .causes-container a{
   display: block;
-  text-decoration: none;
-  color: var(--dark-blue-color);
   width: 270px;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 15px 40px;
-  font-size: 2rem;
+  color: var(--dark-blue-color);
   text-align: center;
   border: 1px solid var(--light-green-color);
-  border-radius: 5px;
-  transition: background 0.5s ease-in-out, color 0.1s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .causes-container a:hover{
   background-color: var(--light-green-color);
   color: var(--white-color);
+}
+.donate-banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px 130px;
+  background-color: var(--light-green-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 5px;
+}
+.donate-banner h2{
+  font-size: 3.5rem;
+  color: var(--white-color);
+  text-align: center;
+}
+.donate-banner a{
+  font-size: 1.8rem;
+  text-decoration: none;
+  border: 1px solid var(--dark-blue-color);
+  color: var(--white-color);
+}
+.donate-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--dark-blue-color);
+  transform: scale(1.03);
+  transition: transform 300ms ease-in-out;
+  border-radius: 50px;
+}
+.donate-btn:hover::before, 
+.donate-btn:focus::before{
+  transform: scale(0);
+}
+.donate-btn{
+  z-index: 1;
+  overflow: hidden;
+  background-color: transparent;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  border-radius: 50px;
 }
 .volunteer{
   background-color: var(--dark-blue-color);
@@ -485,6 +535,12 @@ main button{
 .contact-us .info-sec h3{
   color: var(--light-green-color);
 }
+.contact-us .info-sec p{
+  line-height: 1.7;
+}
+.contact-us .info-sec p span{
+  color: var(--light-green-color);
+}
 .contact-us .form-sec{
   border: 2px solid var(--dark-blue-color);
   max-width: 550px;
@@ -513,11 +569,14 @@ main button{
 }
 .contact-us form .input-flex input{
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
-.contact-us form input[type="text"]:focus, input[type="email"]:focus{
+.contact-us form input[type="text"]:focus, input[type="email"]:focus, .contact-us form textarea:focus{
   outline: none;
   border: none;
-  box-shadow: 1px 1px 5px 1px var(--dark-blue-color);
+  box-shadow: -1px 1px 12px -7px var(--dark-blue-color);
+  -webkit-box-shadow: -1px 1px 12px -7px var(--dark-blue-color);
+  -moz-box-shadow: -1px 1px 12px -7px var(--dark-blue-color);
 }
 .contact-us form textarea{
   width: 100%;
@@ -531,20 +590,19 @@ main button{
   border: 1px solid var(--dark-blue-color);
   border-radius: 5px;
 }
-.contact-us form textarea:focus{
-  outline: none;
-  border: none;
-  box-shadow: 1px 1px 5px 1px var(--dark-blue-color);
-}
 .contact-us form input[type="submit"]{
   border: none; 
   background-color: var(--dark-blue-color); 
   color: var(--white-color); 
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.contact-us form input[type="submit"]:hover{
+  background-color: #002e5bb2;
 }
 footer{
   background-color: var(--dark-blue-color);
-  padding: 30px 0;
+  padding: 30px 15px;
   color: var(--white-color);
   text-align: center;
   font-size: 1.5rem;
@@ -642,7 +700,7 @@ footer p span{
     margin: 0;
     max-width: 600px;
     width: 100%;
-    line-height: 1.3;
+    line-height: 1.7;
   }
   .bf-footer .contact div{
     align-items: flex-start;
@@ -694,7 +752,7 @@ footer p span{
     width: 90%;
     font-size: 1.2rem;
   }
-  main button{
+  .index-main a{
     padding: 10px;
     font-size: 15px;
     border: none;
@@ -707,7 +765,6 @@ footer p span{
     font-family: 'Bricolage Grotesque', sans-serif;
   }
 }
-
 ::-webkit-scrollbar{
   width: 10px;
 }
