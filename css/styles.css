@@ -20,6 +20,9 @@ html{
 body{
   font-family: 'Bricolage Grotesque', sans-serif;
 }
+body p{
+  font-weight: 400;
+}
 header{
   padding: 15px 80px;
   position: fixed;
@@ -173,16 +176,16 @@ main p{
   height: 103vh;
   position: relative;
 }
-.become-volunteer{
+.become-volunteer, .social-media{
   background-color: var(--dark-blue-color);
   padding: 80px 10px;
   text-align: center;
   color: var(--white-color);
 }
-.become-volunteer h3{
+.become-volunteer h3, .social-media h3{
   font-size: 3.5rem;
 }
-.become-volunteer p{
+.become-volunteer p, .social-media p{
   font-size: 1.5rem;
   max-width: 600px;
   width: 100%;
@@ -376,22 +379,6 @@ main p{
 }
 .bf-footer .contact p i{
   margin-right: 10px;
-}
-.bf-footer .contact div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bf-footer .contact div i{
-  width: 35px;
-  height: 35px;
-  font-size: 18px;
-  margin-right: 8px;
-  border: 2px solid var(--light-green-color);
-  transition: transform 0.3s ease-in-out;
-}
-.bf-footer .contact div i:hover{
-  transform: translateY(8px);
 }
 .causes{
   padding: 80px 0;
@@ -657,6 +644,30 @@ input[type="email"]:focus,
 .contact-us form input[type="submit"]:hover{
   background-color: #002e5bb2;
 }
+.social-media div{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media a{
+  font-size: 2.5rem;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.social-media div i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--white-color);
+  border-radius: 10px;
+}
+.social-media div i:hover{
+  transform: scale(1.1);
+}
 footer{
   background-color: var(--dark-blue-color);
   padding: 30px 15px;
@@ -820,6 +831,12 @@ footer p span{
     border: 2px solid var(--light-green-color);
     cursor: pointer;
     font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  .about-hero h2,
+  .causes-hero h2,
+  .contact-hero h2,
+  .volunteer-hero h2{
+    font-size: 5rem;
   }
 }
 ::-webkit-scrollbar{

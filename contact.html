@@ -61,6 +61,15 @@
         </form>
       </div>
     </section>
+    <section class="social-media">
+      <h3 class="social-media-title">Connect with Us on Social Media</h>
+      <p class="social-media-desc">Stay updated with our latest news, stories, and events by following us on our social media platforms.</p>
+      <div class="social-media-icons">
+        <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;" title="Facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;" title="Instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;" title="Twitter"></i></i></a>
+      </div>
+    </section>
     <section class="bf-footer">
       <div class="mission mission-animate">
         <h2 class="mission-info">Who Are We?</h2>
@@ -84,12 +93,6 @@
         <p><i class="fa-solid fa-location-dot" style="color: #09cc7f;"></i>Kumasi, Ghana</p>
         <p><i class="fa-solid fa-phone" style="color: #09cc7f;"></i>+233 55 423 4233</p>
         <p><i class="fa-solid fa-envelope" style="color: #09cc7f;"></i>info@example.com</p>
-        <div>
-          <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-          <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-          <a href=""><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a>
-        </div>
       </div>
     </section>
     <footer>
@@ -105,8 +108,9 @@
         });
   
   
-        ScrollReveal().reveal('.main-title', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.main-title, .social-media-title', { delay: 100, origin: 'bottom' });
         ScrollReveal().reveal('.contact-info-animate, .form-animate', { delay: 50, origin: 'top', interval: 200 });  
+        ScrollReveal().reveal('.social-media-desc, .social-media-icons', { delay: 50, origin: 'bottom' });
         ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate', { delay: 50, origin: 'bottom', interval: 200 });
       </script>
 
