@@ -686,19 +686,34 @@ input[type="email"]:focus,
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
+  height: 65px;
+  transition: height 0.5s ease-in-out;
 }
 .volunteer-desc-dropdown h3{
   font-size: 2rem;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   color: var(--dark-blue-color);
 }
 .volunteer-desc-dropdown h3 i{
   float: right;
-  cursor: pointer;
+
+  transition: rotate 0.5s ease-in-out;
+  font-size: 2.5rem;
+}
+.volunteer-desc-dropdown h3 i.active{
+  transform: rotate(180deg);
 }
 .volunteer-desc-dropdown p{
   font-size: 1.5rem;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.volunteer-desc-dropdown div.active{
+  min-height: 150px;
+  height: 100%;
+}
+.volunteer-desc-dropdown div.active p{
+  opacity: 1;
 }
 footer{
   background-color: var(--dark-blue-color);
@@ -833,6 +848,9 @@ footer p span{
   .contact-us form .input-flex input:first-of-type{
     margin-bottom: 20px;
   }
+  /* .volunteer-desc-dropdown div.active{
+    height: 230px;
+  } */
 }
 @media (max-width: 360px){
   header{

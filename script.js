@@ -39,3 +39,26 @@ const sectionOneObserver = new IntersectionObserver
   },
   sectionOneOptions);
 sectionOneObserver.observe(main);
+
+const firstDownIcon = document.querySelector('.first-down-icon');
+const secondDownIcon = document.querySelector('.second-down-icon');
+const thirdDownIcon = document.querySelector('.third-down-icon');
+
+const firstDesc = document.querySelector('.first-desc');
+const secondDesc = document.querySelector('.second-desc');
+const thirdDesc = document.querySelector('.third-desc');
+
+firstDownIcon.addEventListener('click', () => {
+  firstDesc.classList.toggle("active");
+  firstDownIcon.classList.toggle("active");
+})
+
+secondDownIcon.addEventListener('click', () => {
+  secondDesc.classList.toggle("active");
+  secondDownIcon.classList.toggle("active");
+})
+
+thirdDownIcon.addEventListener('click', () => {
+  thirdDesc.classList.toggle("active");
+  thirdDownIcon.classList.toggle("active");
+})
