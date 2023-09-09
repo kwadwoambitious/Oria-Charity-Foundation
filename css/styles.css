@@ -580,9 +580,6 @@ main p{
 .contact-us .info-sec h3{
   color: var(--light-green-color);
 }
-/* .contact-us .info-sec p{
-  line-height: 1.7;
-} */
 .contact-us .info-sec p span{
   color: var(--light-green-color);
 }
@@ -677,6 +674,29 @@ input[type="email"]:focus,
 .volunteer-desc h2,
 .volunteer-desc > p{
   text-align: center;
+}
+.volunteer-desc-dropdown{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.volunteer-desc-dropdown div{
+  border: 1px solid var(--dark-blue-color);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.volunteer-desc-dropdown h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--dark-blue-color);
+}
+.volunteer-desc-dropdown h3 i{
+  float: right;
+}
+.volunteer-desc-dropdown p{
+  font-size: 1.5rem;
 }
 footer{
   background-color: var(--dark-blue-color);
