@@ -686,35 +686,36 @@ input[type="email"]:focus,
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
-  height: 65px;
-  transition: height 0.5s ease-in-out;
+  /* height: 65px;
+  transition: height 0.5s ease-in-out; */
 }
 .volunteer-desc-dropdown h3{
   font-size: 2rem;
   padding-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--dark-blue-color);
+  border-bottom: 1px solid var(--dark-blue-color);
 }
-.volunteer-desc-dropdown h3 i{
+/* .volunteer-desc-dropdown h3 i{
   float: right;
-
   transition: rotate 0.5s ease-in-out;
   font-size: 2.5rem;
 }
 .volunteer-desc-dropdown h3 i.active{
   transform: rotate(180deg);
-}
+} */
 .volunteer-desc-dropdown p{
   font-size: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  /* opacity: 0;
+  transition: opacity 0.5s ease-in-out; */
 }
-.volunteer-desc-dropdown div.active{
+/* .volunteer-desc-dropdown div.active{
   min-height: 150px;
   height: 100%;
 }
 .volunteer-desc-dropdown div.active p{
   opacity: 1;
-}
+} */
 footer{
   background-color: var(--dark-blue-color);
   padding: 30px 15px;
