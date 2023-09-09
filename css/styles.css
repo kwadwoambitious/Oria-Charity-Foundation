@@ -634,14 +634,16 @@ input[type="email"]:focus,
   border: 1px solid var(--dark-blue-color);
   border-radius: 5px;
 }
-.contact-us form input[type="submit"]{
+.contact-us form input[type="submit"], 
+.volunteer-form form input[type="submit"]{
   border: none; 
   background-color: var(--dark-blue-color); 
   color: var(--white-color); 
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
-.contact-us form input[type="submit"]:hover{
+.contact-us form input[type="submit"]:hover, 
+.volunteer-form form input[type="submit"]:hover{
   background-color: #002e5bb2;
 }
 .social-media div{
@@ -716,6 +718,64 @@ input[type="email"]:focus,
 .volunteer-desc-dropdown div.active p{
   opacity: 1;
 } */
+.volunteer-form{
+  background-color: var(--light-green-color);
+  padding: 80px 0;
+}
+.volunteer-form h3{
+  text-align: center;
+  color: var(--white-color);
+  font-size: 3rem;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 20px;
+}
+.volunteer-form select{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.volunteer-form select:focus, 
+.volunteer-form input:focus{
+  border: 2px solid var(--dark-blue-color);
+}
+.volunteer-form select option{
+  padding: 100px;
+  font-size: 1.7rem;
+}
+.volunteer-form select option:hover{
+  background-color: var(--dark-blue-color);
+}
+.volunteer-form select:first-of-type{
+  margin-bottom: 15px;
+}
+.volunteer-form form{
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid var(--dark-blue-color);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.volunteer-form form input{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5rem;
+  display: block;
+  padding: 15px 12px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+}
+.volunteer-form form input[type="submit"]{
+  margin-top: 15px;
+  padding: 15px 15px;
+}
 footer{
   background-color: var(--dark-blue-color);
   padding: 30px 15px;
@@ -838,7 +898,8 @@ footer p span{
   main p{
     width: 98%;
   }
-  .contact-us .form-sec{
+  .contact-us .form-sec, 
+  .volunteer-form form{
     border:none;
     padding: 40px 10px;
   }
@@ -849,9 +910,6 @@ footer p span{
   .contact-us form .input-flex input:first-of-type{
     margin-bottom: 20px;
   }
-  /* .volunteer-desc-dropdown div.active{
-    height: 230px;
-  } */
 }
 @media (max-width: 360px){
   header{

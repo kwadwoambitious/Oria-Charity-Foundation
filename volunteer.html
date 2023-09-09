@@ -40,26 +40,46 @@
         <p><a href="./" style="text-decoration: none; color: white;">Home  /</a> Volunteer</p>
       </main>
     </div>
-    <section class="volunteer-desc">
-      <h2>Why Volunteer with Us?</h2>
-      <p>Join hands with Oria Charity Foundation to make a positive impact on the lives of those in need. Our volunteers are the heart and soul of our organization, and we welcome individuals like you who are passionate about making a difference.</p>
+    <section class="volunteer-desc" id="volunteer">
+      <h2 class="volunteer-title">Why Volunteer with Us?</h2>
+      <p class="volunteer-info">Join hands with Oria Charity Foundation to make a positive impact on the lives of those in need. Our volunteers are the heart and soul of our organization, and we welcome individuals like you who are passionate about making a difference.</p>
       <div class="volunteer-desc-dropdown">
-        <div class="first-desc">
+        <div class="first-desc volunteer-card">
           <h3>Meaningful Impact</h3>
           <!-- <i class="fa-solid fa-circle-chevron-down" style="color: #002d5b;"></i> -->
           <p>Every task, no matter how small, contributes to our mission of raising funds, providing resources, and conducting initiatives to support those in need. Whether you're feeding the hungry, mentoring a child, your efforts matter.</p>
         </div>
-        <div class="second-desc">
+        <div class="second-desc volunteer-card">
           <h3>Personal Growth</h3>
           <!-- <i class="fa-solid fa-circle-chevron-down" style="color: #002d5b;"></i> -->
           <p>Volunteering is an opportunity to learn new skills, gain experience, and challenge yourself. It's a chance to grow both personally and professionally while making a positive impact on the world.</p>
         </div>
-        <div class="third-desc">
+        <div class="third-desc volunteer-card">
           <h3>Build Connections</h3>
           <!-- <i class="fa-solid fa-circle-chevron-down" style="color: #002d5b;"></i> -->
           <p>Join a diverse group of individuals who share your commitment to social change. Forge lasting friendships and expand your network while working towards a common goal.</p>
         </div>
       </div>
+    </section>
+    <section class="volunteer-form">
+      <h3 class="volunteer-form-title">Fill out the submission form below</h3>
+      <form class="volunteer-sub-form">
+          <div>
+            <input type="text" name="full_name" placeholder="Enter full name" required>
+            <select>
+              <option value="gender">--Select Gender--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <input type="tel" name="phone-number" placeholder="Enter phone number" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="location" placeholder="Enter your location" required>
+            <select>
+              <option value="reason">I want to be a volunteer</option>
+            </select>
+            <input type="submit" name="submit" value="Join Us">
+          </div>
+      </form>
     </section>
     <section class="bf-footer">
       <div class="mission mission-animate">
@@ -99,9 +119,10 @@
         });
   
   
-        ScrollReveal().reveal('.main-title', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.main-title, .volunteer-title, .volunteer-form-title', { delay: 100, origin: 'bottom' });
         ScrollReveal().reveal('.contact-info-animate, .form-animate', { delay: 50, origin: 'top', interval: 200 });  
-        ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate', { delay: 50, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.volunteer-info, .volunteer-sub-form', { delay: 50, origin: 'bottom' });
+        ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate, .volunteer-card', { delay: 50, origin: 'bottom', interval: 200 });
       </script>
 
 </body>
