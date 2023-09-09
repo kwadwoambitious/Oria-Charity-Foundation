@@ -694,9 +694,11 @@ input[type="email"]:focus,
 }
 .volunteer-desc-dropdown h3 i{
   float: right;
+  cursor: pointer;
 }
 .volunteer-desc-dropdown p{
   font-size: 1.5rem;
+  display: none;
 }
 footer{
   background-color: var(--dark-blue-color);
