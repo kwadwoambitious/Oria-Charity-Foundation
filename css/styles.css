@@ -185,7 +185,7 @@ main p{
 .become-volunteer h3, .social-media h3{
   font-size: 3.5rem;
 }
-.become-volunteer p, .social-media p{
+.become-volunteer p, .social-media p, .volunteer-desc p:first-of-type{
   font-size: 1.5rem;
   max-width: 600px;
   width: 100%;
@@ -383,7 +383,7 @@ main p{
 .causes{
   padding: 80px 0;
 }
-.causes h2, .volunteer h2{
+.causes h2, .volunteer h2, .volunteer-desc h2{
   text-align: center;
   font-size: 4rem;
   color: var(--light-green-color);
@@ -667,6 +667,12 @@ input[type="email"]:focus,
 }
 .social-media div i:hover{
   transform: scale(1.1);
+}
+.volunteer-desc{
+  padding: 80px 10px;
+}
+.volunteer-desc h2, p:first-of-type{
+  text-align: center;
 }
 footer{
   background-color: var(--dark-blue-color);
