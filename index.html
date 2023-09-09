@@ -64,6 +64,11 @@
         </div>
       </div>
     </section>
+    <section class="become-volunteer">
+      <h3 class="volunteer-title">Become a volunteer</h3>
+      <p class="volunteer-desc">Join us in spreading kindness, hope, and positive change. Together, we can create a brighter future for those in need. Your dedication as a volunteer can be the spark that ignites a better tomorrow.</p>
+      <a href="volunteer.html" class="btn btn1 volunteer-desc">JOIN WITH US</a>
+    </section>
     <section class="bf-footer">
       <div class="mission mission-animate">
         <h2>Who Are We?</h2>
@@ -78,7 +83,7 @@
           <li><a href="about.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>About Us</a></li>
           <li><a href="causes.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Causes</a></li>
           <li><a href="contact.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Contact</a></li>
-          <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become A Volunteer</a></li>
+          <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become a volunteer</a></li>
         </ul>
       </div>
       <div class="contact contact-animate">
@@ -102,16 +107,16 @@
     <script src="script.js"></script>
     <script>
       ScrollReveal({
-        reset: true,
+        //reset: true,
         distance: '60px',
         duration: 2500,
         delay: 400
       });
 
 
-      ScrollReveal().reveal('.main-title, .causes-title', { delay: 100, origin: 'bottom' });
+      ScrollReveal().reveal('.main-title, .causes-title, .volunteer-title', { delay: 100, origin: 'bottom' });
       ScrollReveal().reveal('.cause', { delay: 50, origin: 'bottom', interval: 200 }); 
-      ScrollReveal().reveal('.main-p', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.main-p, .volunteer-desc', { delay: 50, origin: 'bottom' });
       ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate', { delay: 50, origin: 'bottom', interval: 200 });
     </script>
 </body>

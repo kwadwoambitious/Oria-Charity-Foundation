@@ -1,7 +1,7 @@
 const mainMenu = document.querySelector("ul");
 const menuBar = document.querySelector(".menu-bar");
 const header = document.querySelector("header");
-      
+
 menuBar.addEventListener("click", () => {
     menuBar.classList.toggle("active");
     mainMenu.classList.toggle("active");
@@ -11,6 +11,12 @@ document.querySelectorAll(".menu-item").forEach(n => n.addEventListener("click",
     menuBar.classList.remove("active");
     mainMenu.classList.remove("active"); 
 }));
+
+window.addEventListener('scroll', () => {
+  menuBar.classList.remove("active");
+  mainMenu.classList.remove("active"); 
+  header.style.backgroundColor = "#002d5b";
+});
 
 const main = document.querySelector('main');
 const sectionOneOptions = {

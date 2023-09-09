@@ -66,10 +66,10 @@
     </section>
     <section class="donate-banner">
         <div>
-          <h2>Help us so we can help others</h2>
+          <h2 class="lets-help">Help us so we can help others</h2>
         </div>
         <div>
-          <a href="" class="btn donate-btn">Donate now</a>
+          <a href="" class="btn donate-btn lets-help">Donate now</a>
         </div>
     </section>
     <section class="bf-footer">
@@ -86,7 +86,7 @@
           <li><a href="about.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>About Us</a></li>
           <li><a href="causes.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Causes</a></li>
           <li><a href="contact.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Contact</a></li>
-          <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become A Volunteer</a></li>
+          <li><a href="volunteer.html"><i class="fa-solid fa-arrow-right" style="color: #09cc7f; margin-right: 5px;"></i>Become a volunteer</a></li>
         </ul>
       </div>
       <div class="contact contact-animate">
@@ -109,14 +109,14 @@
       <script src="script.js"></script>
       <script>
         ScrollReveal({
-          reset: true,
+          //reset: true,
           distance: '60px',
           duration: 2500,
           delay: 400
         });
   
   
-        ScrollReveal().reveal('.main-title, .causes-title', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.main-title, .causes-title, .lets-help', { delay: 100, origin: 'bottom' });
         ScrollReveal().reveal('.cause', { delay: 50, origin: 'bottom', interval: 200 }); 
         ScrollReveal().reveal('.mission-animate, .links-animate, .contact-animate', { delay: 50, origin: 'bottom', interval: 200 });
       </script>

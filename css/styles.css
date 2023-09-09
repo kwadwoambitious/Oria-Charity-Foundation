@@ -122,7 +122,8 @@ header nav ul li a:hover:after{
     background-image: linear-gradient(45deg,var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-6.jpeg');
   }
 }
-main, .about-hero{
+main, 
+.about-hero{
   text-align: center;
   width: 100%;
   position: absolute;
@@ -148,7 +149,8 @@ main p{
   letter-spacing: 0.2rem;
   line-height: 1.7;
 }
-.index-main a, .causes-container a{
+.index-main a, 
+.causes-container a{
   padding: 10px;
   font-size: 1.8rem;
   text-decoration: none;
@@ -159,7 +161,10 @@ main p{
   border: 1px solid var(--light-green-color);
   font-family: 'Bricolage Grotesque', sans-serif;
 }
-.wrapper, .wrap, .holder{
+.wrapper, 
+.wrap, 
+.holder, 
+.cover{
   background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/image-2.jpg');
   background-position: center;
   background-size: cover;
@@ -168,19 +173,61 @@ main p{
   height: 103vh;
   position: relative;
 }
+.become-volunteer{
+  background-color: var(--dark-blue-color);
+  padding: 80px 10px;
+  text-align: center;
+  color: var(--white-color);
+}
+.become-volunteer h3{
+  font-size: 3.5rem;
+}
+.become-volunteer p{
+  font-size: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+}
+.become-volunteer a{
+  color: var(--white-color);
+  text-decoration: none;
+  display: block;
+  border: 1px solid var(--light-green-color);
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 17px 25px;
+  border-radius: 30px;
+  font-size: 1.6rem;
+}
 .wrap{
   background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/causes-bg-1.jpeg');
 }
 .holder{
   background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/causes-bg-2.jpeg');
 }
-.about-hero, .causes-hero, .contact-hero{
+.cover{
+  background-image: linear-gradient(45deg, var(--bg-gradient-color), var(--bg-gradient-color)), url('../images/volunteer-bg.jpeg');
+}
+.about-hero, 
+.causes-hero, 
+.contact-hero, 
+.volunteer-hero{
   color: var(--light-green-color);
 }
-.about-hero h2, .causes-hero h2, .contact-hero h2{
+.about-hero h2, 
+.causes-hero h2, 
+.contact-hero h2, 
+.volunteer-hero h2{
   font-size: 7rem;
 }
-.about-hero hr, .causes-hero hr, .contact-hero hr{
+.about-hero hr, 
+.causes-hero hr, 
+.contact-hero hr, 
+.volunteer-hero hr{
   display: block;
   width: 150px;
   margin: 0 auto;
@@ -190,7 +237,10 @@ main p{
   margin-bottom: 30px;
   font-weight: 100;
 }
-.about-hero p, .causes-hero p, .contact-hero p{
+.about-hero p, 
+.causes-hero p, 
+.contact-hero p, 
+.volunteer-hero p{
   font-size: 2rem;
   color: var(--light-green-color);
 }
@@ -238,7 +288,8 @@ main p{
   color: var(--light-green-color);
   font-weight: bold;
 }
-.sec-1 h3, .contact-us h3{
+.sec-1 h3, 
+.contact-us h3{
   font-size: 2.3rem;
   margin-bottom: 20px;
   color: var(--dark-blue-color);
@@ -250,7 +301,8 @@ main p{
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-.sec-1 p, .contact-us p{
+.sec-1 p, 
+.contact-us p{
   line-height: 1.7;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -479,7 +531,8 @@ main p{
   border-radius: 7px;
   object-fit: cover;
 }
-.volunteer h3, .volunteer p{
+.volunteer h3, 
+.volunteer p{
   text-align: center;
   color: var(--white-color);
 }
@@ -502,10 +555,12 @@ main p{
   justify-content: center;
   column-gap: 30px;
 }
-.volunteer div a, .contact div a{
+.volunteer div a, 
+.contact div a{
   text-decoration: none;
 }
-.volunteer div i, .contact div i{
+.volunteer div i, 
+.contact div i{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,7 +626,9 @@ main p{
   width: 100%;
   transition: all 0.2s ease-in-out;
 }
-.contact-us form input[type="text"]:focus, input[type="email"]:focus, .contact-us form textarea:focus{
+.contact-us form input[type="text"]:focus, 
+input[type="email"]:focus, 
+.contact-us form textarea:focus{
   outline: none;
   border: none;
   box-shadow: -1px 1px 12px -7px var(--dark-blue-color);
