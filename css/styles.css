@@ -22,6 +22,7 @@ body{
 }
 body p{
   font-weight: 400;
+  line-height: 1.7;
 }
 header{
   padding: 15px 80px;
@@ -150,7 +151,7 @@ main p{
   margin-top: 20px;
   margin-bottom: 30px; 
   letter-spacing: 0.2rem;
-  line-height: 1.7;
+  /* line-height: 1.7; */
 }
 .index-main a, 
 .causes-container a{
@@ -176,22 +177,26 @@ main p{
   height: 103vh;
   position: relative;
 }
-.become-volunteer, .social-media{
+.become-volunteer, 
+.social-media{
   background-color: var(--dark-blue-color);
   padding: 80px 10px;
   text-align: center;
   color: var(--white-color);
 }
-.become-volunteer h3, .social-media h3{
+.become-volunteer h3, 
+.social-media h3{
   font-size: 3.5rem;
 }
-.become-volunteer p, .social-media p, .volunteer-desc p:first-of-type{
+.become-volunteer p, 
+.social-media p, 
+.volunteer-desc > p{
   font-size: 1.5rem;
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   letter-spacing: 0.1rem;
 }
 .become-volunteer a{
@@ -306,7 +311,7 @@ main p{
 }
 .sec-1 p, 
 .contact-us p{
-  line-height: 1.7;
+  /* line-height: 1.7; */
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   color: var(--dark-blue-color);
@@ -339,7 +344,7 @@ main p{
 .bf-footer .mission p{
   width: 350px;
   font-size: 1.5rem;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   letter-spacing: 0.2rem;
 }
 .bf-footer ul li{
@@ -438,7 +443,7 @@ main p{
   text-align: left;
   padding: 0 10px 10px 10px;
   color: var(--gray-color);
-  line-height: 1.7;
+  /* line-height: 1.7; */
 }
 .causes-container a{
   display: block;
@@ -577,9 +582,9 @@ main p{
 .contact-us .info-sec h3{
   color: var(--light-green-color);
 }
-.contact-us .info-sec p{
+/* .contact-us .info-sec p{
   line-height: 1.7;
-}
+} */
 .contact-us .info-sec p span{
   color: var(--light-green-color);
 }
@@ -671,7 +676,8 @@ input[type="email"]:focus,
 .volunteer-desc{
   padding: 80px 10px;
 }
-.volunteer-desc h2, p:first-of-type{
+.volunteer-desc h2,
+.volunteer-desc > p{
   text-align: center;
 }
 footer{
@@ -774,7 +780,7 @@ footer p span{
     margin: 0;
     max-width: 600px;
     width: 100%;
-    line-height: 1.7;
+    /* line-height: 1.7; */
   }
   .bf-footer .contact div{
     align-items: flex-start;
