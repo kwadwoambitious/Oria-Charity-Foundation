@@ -151,7 +151,6 @@ main p{
   margin-top: 20px;
   margin-bottom: 30px; 
   letter-spacing: 0.2rem;
-  /* line-height: 1.7; */
 }
 .index-main a, 
 .causes-container a{
@@ -188,6 +187,9 @@ main p{
 .social-media h3{
   font-size: 3.5rem;
 }
+.become-volunteer p{
+  padding: 0 10px;
+}
 .become-volunteer p, 
 .social-media p, 
 .volunteer-desc > p{
@@ -196,7 +198,6 @@ main p{
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  /* line-height: 1.7; */
   letter-spacing: 0.1rem;
 }
 .become-volunteer a{
@@ -311,7 +312,6 @@ main p{
 }
 .sec-1 p, 
 .contact-us p{
-  /* line-height: 1.7; */
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   color: var(--dark-blue-color);
@@ -344,7 +344,6 @@ main p{
 .bf-footer .mission p{
   width: 350px;
   font-size: 1.5rem;
-  /* line-height: 1.7; */
   letter-spacing: 0.2rem;
 }
 .bf-footer ul li{
@@ -443,7 +442,6 @@ main p{
   text-align: left;
   padding: 0 10px 10px 10px;
   color: var(--gray-color);
-  /* line-height: 1.7; */
 }
 .causes-container a{
   display: block;
@@ -780,7 +778,6 @@ footer p span{
     margin: 0;
     max-width: 600px;
     width: 100%;
-    /* line-height: 1.7; */
   }
   .bf-footer .contact div{
     align-items: flex-start;
