@@ -698,14 +698,6 @@ input[type="email"]:focus,
   color: var(--dark-blue-color);
   border-bottom: 1px solid var(--dark-blue-color);
 }
-/* .volunteer-desc-dropdown h3 i{
-  float: right;
-  transition: rotate 0.5s ease-in-out;
-  font-size: 2.5rem;
-}
-.volunteer-desc-dropdown h3 i.active{
-  transform: rotate(180deg);
-} */
 .volunteer-desc-dropdown p{
   font-size: 1.5rem;
 }
