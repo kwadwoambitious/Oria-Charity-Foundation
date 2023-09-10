@@ -708,8 +708,6 @@ input[type="email"]:focus,
 } */
 .volunteer-desc-dropdown p{
   font-size: 1.5rem;
-  /* opacity: 0;
-  transition: opacity 0.5s ease-in-out; */
 }
 .volunteer-form{
   background-color: var(--light-green-color);
