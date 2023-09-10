@@ -711,13 +711,6 @@ input[type="email"]:focus,
   /* opacity: 0;
   transition: opacity 0.5s ease-in-out; */
 }
-/* .volunteer-desc-dropdown div.active{
-  min-height: 150px;
-  height: 100%;
-}
-.volunteer-desc-dropdown div.active p{
-  opacity: 1;
-} */
 .volunteer-form{
   background-color: var(--light-green-color);
   padding: 80px 0;
