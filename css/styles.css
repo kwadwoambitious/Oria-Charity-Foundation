@@ -688,8 +688,6 @@ input[type="email"]:focus,
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
-  /* height: 65px;
-  transition: height 0.5s ease-in-out; */
 }
 .volunteer-desc-dropdown h3{
   font-size: 2rem;
