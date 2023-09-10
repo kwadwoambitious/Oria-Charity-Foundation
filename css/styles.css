@@ -395,7 +395,8 @@ main p{
   color: var(--light-green-color);
   letter-spacing: 0.2rem;
 }
-.causes hr, .volunteer hr{
+.causes hr, 
+.volunteer hr{
   height: 2px;
   display: block;
   background-color: var(--light-green-color);
